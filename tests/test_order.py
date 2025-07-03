@@ -53,3 +53,4 @@ class TestCreateOrder:
         response = Order.create_order(payload, token=token)
         assert response.status_code == TestMessages.ORDER_NOT_CREATED_WRONG_HASH["code"]
         assert TestMessages.ORDER_NOT_CREATED_WRONG_HASH["text"] in response.text
+

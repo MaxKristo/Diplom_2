@@ -12,3 +12,4 @@ class Endpoints:
     CREATE_ORDER = f"{URL}api/orders"             # для создания заказа
     GET_ORDER_USER = f"{URL}api/orders"          # для получения заказа конкретного пользователя
 
+

@@ -23,3 +23,5 @@ class RequiredParameters:
 
 # переменная, которая содержит параметры используемые при авторизации пользователя
     login_parameters = ["email", "password"]
+
+

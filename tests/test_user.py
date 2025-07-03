@@ -80,3 +80,5 @@ class TestAuthorizationUser:
         assert response.json()["success"] == TestMessages.AUTHORIZATION_DATA_NOT_ENOUGH["success"]
         assert response.json()["message"] == TestMessages.AUTHORIZATION_DATA_NOT_ENOUGH["message"]
 
+
+

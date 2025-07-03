@@ -40,3 +40,4 @@ def random_ingredients():
                 random_ingredient_2["_id"],
                 random_ingredient_3["_id"]
         ]
+
