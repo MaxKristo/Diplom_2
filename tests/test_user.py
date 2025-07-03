@@ -5,8 +5,6 @@ import copy
 import allure
 from data import *
 
-
-
 class TestCreateUser:
 
     @allure.title('Проверка успешного создания пользователя с валидными данными')

@@ -2,7 +2,6 @@ import allure
 from helpers import *
 from urls import *
 
-
 class TestCreateOrder:
 
     @allure.title('Проверка создания заказа без авторизации пользователя')

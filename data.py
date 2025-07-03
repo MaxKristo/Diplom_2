@@ -9,8 +9,6 @@ class TestMessages:
     AUTHORIZATION_DATA_NOT_ENOUGH = {"code": 401, "success": False, "message": "email or password are incorrect"}
     USER_DELETE = {"code": 202, "success": True, "message": "User successfully removed"}
 
-
-
     # создание заказа
     ORDER_SUCCESSFUL_CREATION = {"code": 200, "success": True, "message": "order"}
     ORDER_NOT_CREATED_WRONG_HASH = {"code": 500, "text": "Internal Server Error"}

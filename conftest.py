@@ -4,8 +4,6 @@ import allure
 from helpers import Generators, User, Order
 
 
-
-
 # фикстура регистрирует нового пользователя и удаляет его после теста
 @pytest.fixture()
 def register_user_with_random_data():

@@ -110,9 +110,6 @@ class User:
                     allure.attach(str(response.json()), name="Ответ сервера", attachment_type=allure.attachment_type.JSON)
 
 
-
-
-
 # класс содержит статистические методы для работы с заказом
 class Order:
 
@@ -153,6 +150,3 @@ class Order:
         else:
             response = requests.get(url=Endpoints.GET_ORDER_USER)
         return response
-
-
-
