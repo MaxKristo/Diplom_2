@@ -1,0 +1,1 @@
+{'success': True, 'accessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NjZmNTdkOWVkMjgwMDAxYjY0NTA1OCIsImlhdCI6MTc1MTU3Nzk4MSwiZXhwIjoxNzUxNTc5MTgxfQ.R5aN_iKC-J2e7OmdMpnplp6cKuOLk_I0WmDe4ZdydEI', 'refreshToken': 'c6350576ebc28946778ab5c18f8e8df70e4f87bb94bb8b3e6e562d233c262cec304941de47ae1d05', 'user': {'email': 'c18x3ttn6@lnr.wy', 'name': 'bkwcn'}}
