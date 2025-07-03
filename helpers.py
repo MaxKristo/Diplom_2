@@ -110,16 +110,7 @@ class User:
                     allure.attach(str(response.json()), name="Ответ сервера", attachment_type=allure.attachment_type.JSON)
 
 
-    # метод изменяет данные пользователя
-    @staticmethod
-    @allure.step('Изменение регистрационных данных пользователя')
-    def edit_user(changed_data_of_registered_user, token=None):
-        if token:
-            header = {'Authorization': token}
-            response = requests.patch(url=Endpoints.CHANGE_USER_DATA, headers=header, json=changed_data_of_registered_user)
-        else:
-            response = requests.patch(url=Endpoints.CHANGE_USER_DATA, json=changed_data_of_registered_user)
-        return response
+
 
 
 # класс содержит статистические методы для работы с заказом
