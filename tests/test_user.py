@@ -1,7 +1,6 @@
 import pytest
 from helpers import *
 from urls import *
-import copy
 import allure
 from data import *
 
@@ -10,11 +9,13 @@ class TestCreateUser:
     @allure.title('Проверка успешного создания пользователя с валидными данными')
     @allure.description('Отправляем POST-запрос на ручку api/auth/register на создание пользователя и проверяем код и тело ответа')
     @allure.link(URL, name='Учебный сервис «Stellar Burgers»')
-    def test_create_user_with_valid_values(self, register_user_with_random_data):
-        response, _ = register_user_with_random_data
+    def test_create_user_with_valid_values(self):
+        random_user = Generators.generate_payload()
+        response = User.register_user(random_user)
         assert response.status_code == TestMessages.SUCCESSFUL_CREATED_NEW_USER_WITH_VALID_VALUES["code"]
         assert response.json()["success"] == TestMessages.SUCCESSFUL_CREATED_NEW_USER_WITH_VALID_VALUES["success"]
         assert TestMessages.SUCCESSFUL_CREATED_NEW_USER_WITH_VALID_VALUES["message"] in response.json()
+        User.delete_user_after_test(random_user)
 
 
     @allure.title('Проверка, что нельзя создать двух одинаковых пользователей')
